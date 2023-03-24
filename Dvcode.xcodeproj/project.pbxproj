@@ -11,6 +11,8 @@
 		156460DB29CD07F6003FE439 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156460DA29CD07F6003FE439 /* ContentView.swift */; };
 		156460DD29CD07F8003FE439 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 156460DC29CD07F8003FE439 /* Assets.xcassets */; };
 		156460E129CD07F8003FE439 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 156460E029CD07F8003FE439 /* Preview Assets.xcassets */; };
+		156460E929CD08B0003FE439 /* DvorakEncoderDecoder in Frameworks */ = {isa = PBXBuildFile; productRef = 156460E829CD08B0003FE439 /* DvorakEncoderDecoder */; };
+		156460EC29CD2AA0003FE439 /* Pasteboard in Frameworks */ = {isa = PBXBuildFile; productRef = 156460EB29CD2AA0003FE439 /* Pasteboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				156460E929CD08B0003FE439 /* DvorakEncoderDecoder in Frameworks */,
+				156460EC29CD2AA0003FE439 /* Pasteboard in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +89,10 @@
 			dependencies = (
 			);
 			name = Dvcode;
+			packageProductDependencies = (
+				156460E829CD08B0003FE439 /* DvorakEncoderDecoder */,
+				156460EB29CD2AA0003FE439 /* Pasteboard */,
+			);
 			productName = Dvcode;
 			productReference = 156460D529CD07F6003FE439 /* Dvcode.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +121,10 @@
 				Base,
 			);
 			mainGroup = 156460CC29CD07F6003FE439;
+			packageReferences = (
+				156460E729CD08B0003FE439 /* XCRemoteSwiftPackageReference "DvorakEncoderDecoder" */,
+				156460EA29CD2AA0003FE439 /* XCRemoteSwiftPackageReference "Pasteboard" */,
+			);
 			productRefGroup = 156460D629CD07F6003FE439 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -279,7 +291,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
@@ -317,7 +329,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
@@ -354,6 +366,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		156460E729CD08B0003FE439 /* XCRemoteSwiftPackageReference "DvorakEncoderDecoder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:aoenth/DvorakEncoderDecoder.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		156460EA29CD2AA0003FE439 /* XCRemoteSwiftPackageReference "Pasteboard" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aoenth/Pasteboard";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		156460E829CD08B0003FE439 /* DvorakEncoderDecoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 156460E729CD08B0003FE439 /* XCRemoteSwiftPackageReference "DvorakEncoderDecoder" */;
+			productName = DvorakEncoderDecoder;
+		};
+		156460EB29CD2AA0003FE439 /* Pasteboard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 156460EA29CD2AA0003FE439 /* XCRemoteSwiftPackageReference "Pasteboard" */;
+			productName = Pasteboard;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 156460CD29CD07F6003FE439 /* Project object */;
 }
