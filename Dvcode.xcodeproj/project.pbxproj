@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AD830AF2B2C125500F2360B /* DvorakCodec in Frameworks */ = {isa = PBXBuildFile; productRef = 0AD830AE2B2C125500F2360B /* DvorakCodec */; };
 		156460D929CD07F6003FE439 /* DvcodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156460D829CD07F6003FE439 /* DvcodeApp.swift */; };
 		156460DB29CD07F6003FE439 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156460DA29CD07F6003FE439 /* ContentView.swift */; };
 		156460DD29CD07F8003FE439 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 156460DC29CD07F8003FE439 /* Assets.xcassets */; };
 		156460E129CD07F8003FE439 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 156460E029CD07F8003FE439 /* Preview Assets.xcassets */; };
-		156460E929CD08B0003FE439 /* DvorakEncoderDecoder in Frameworks */ = {isa = PBXBuildFile; productRef = 156460E829CD08B0003FE439 /* DvorakEncoderDecoder */; };
 		156460EC29CD2AA0003FE439 /* Pasteboard in Frameworks */ = {isa = PBXBuildFile; productRef = 156460EB29CD2AA0003FE439 /* Pasteboard */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				156460E929CD08B0003FE439 /* DvorakEncoderDecoder in Frameworks */,
+				0AD830AF2B2C125500F2360B /* DvorakCodec in Frameworks */,
 				156460EC29CD2AA0003FE439 /* Pasteboard in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,8 +90,8 @@
 			);
 			name = Dvcode;
 			packageProductDependencies = (
-				156460E829CD08B0003FE439 /* DvorakEncoderDecoder */,
 				156460EB29CD2AA0003FE439 /* Pasteboard */,
+				0AD830AE2B2C125500F2360B /* DvorakCodec */,
 			);
 			productName = Dvcode;
 			productReference = 156460D529CD07F6003FE439 /* Dvcode.app */;
@@ -122,8 +122,8 @@
 			);
 			mainGroup = 156460CC29CD07F6003FE439;
 			packageReferences = (
-				156460E729CD08B0003FE439 /* XCRemoteSwiftPackageReference "DvorakEncoderDecoder" */,
 				156460EA29CD2AA0003FE439 /* XCRemoteSwiftPackageReference "Pasteboard" */,
+				0AD830AD2B2C125500F2360B /* XCRemoteSwiftPackageReference "DvorakCodec" */,
 			);
 			productRefGroup = 156460D629CD07F6003FE439 /* Products */;
 			projectDirPath = "";
@@ -368,9 +368,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		156460E729CD08B0003FE439 /* XCRemoteSwiftPackageReference "DvorakEncoderDecoder" */ = {
+		0AD830AD2B2C125500F2360B /* XCRemoteSwiftPackageReference "DvorakCodec" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:aoenth/DvorakEncoderDecoder.git";
+			repositoryURL = "git@github.com:aoenth/DvorakCodec.git";
 			requirement = {
 				branch = main;
 				kind = branch;
@@ -387,10 +387,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		156460E829CD08B0003FE439 /* DvorakEncoderDecoder */ = {
+		0AD830AE2B2C125500F2360B /* DvorakCodec */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 156460E729CD08B0003FE439 /* XCRemoteSwiftPackageReference "DvorakEncoderDecoder" */;
-			productName = DvorakEncoderDecoder;
+			package = 0AD830AD2B2C125500F2360B /* XCRemoteSwiftPackageReference "DvorakCodec" */;
+			productName = DvorakCodec;
 		};
 		156460EB29CD2AA0003FE439 /* Pasteboard */ = {
 			isa = XCSwiftPackageProductDependency;

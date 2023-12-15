@@ -8,7 +8,7 @@
 #if canImport(Pasteboard)
 import Pasteboard
 #endif
-import DvorakEncoderDecoder
+import DvorakCodec
 import SwiftUI
 
 struct ContentView: View {
